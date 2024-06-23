@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000023; /* Cor de fundo do corpo */
+  color: #EEB05A; /* Cor do texto */
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 200px;
+}
+
+main {
+  background: #1A0538; /* Cor de fundo do main */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #EEB05A; /* Cor do texto dentro do main */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid #D43486; /* Cor da borda dos fieldsets */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #EEB05A; /* Cor do texto da legend */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group-inline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #EEB05A; /* Cor do texto das labels */
+}
+
+input, select, button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #D43486; /* Cor da borda dos inputs, selects e buttons */
+  border-radius: 4px;
+  width: 100%;
+  background-color: #D63685; /* Cor de fundo dos inputs, selects e buttons */
+  color: #1A0538; /* Cor do texto dos inputs, selects e buttons */
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+  background-color: transparent; /* Remover cor de fundo dos inputs do tipo radio */
+  color: #EEB05A; /* Cor do texto das labels dos radio buttons */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #EEB05A; /* Cor do texto do footer */
+}
+
+footer .contact-info,
+footer .social-media,
+footer .copyright {
+  margin-bottom: 10px;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 600px) {
+  main {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+  fieldset {
+      grid-column: span 2;
+  }
+
+  .buttons {
+      grid-column: span 2;
+  }
+}
